@@ -1,0 +1,7 @@
+<%= form_for @log do |f| %>
+    <%= f.label :artist %>
+    <%= f.collection_select :artist_id, Artist.all, :id, :name %>
+    <%= f.label :instrument %>
+    <%= f.collection_select :instrument_id, Instrument.all, :id, :name %>
+    <%= f.submit %>
+<% end %>

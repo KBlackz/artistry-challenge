@@ -6,7 +6,7 @@ class LogsController < ApplicationController
 
     def create
        @log = Log.create(log_params) 
-       redirect_to log_path(@log) 
+       redirect_to artist_path(@log.artist_id) 
     end 
 
     def show
@@ -26,7 +26,7 @@ class LogsController < ApplicationController
     def destroy
         @log = Log.find(params[:id])
         @log.destroy
-        redirect_to logs_path
+        redirect_to artist_path
     end    
 
     private
