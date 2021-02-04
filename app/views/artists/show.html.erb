@@ -1,0 +1,10 @@
+<h1> <%= @artist.name %> </h1>
+<p> age: <%= @artist.age %> </p>
+<p> title: <%= @artist.title %> </p>
+<ul> <% @artist.logs.each do |log| %>
+    <li> <%= log.instrument.name %>
+    </li>
+<%end%>
+</ul>
+
+<%= link_to "add_instrument", new_log_path(@artist) %>

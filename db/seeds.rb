@@ -8,3 +8,9 @@ Instrument.create(name: "Guitar", classification: "Strings")
 Instrument.create(name: "Violin", classification: "Strings")
 Instrument.create(name: "Flute", classification: "Woodwind")
 Instrument.create(name: "Xylophone", classification: "Percussion")
+
+log1 = Log.create(artist_id: 1, instrument_id: 4)
+log2 = Log.create(artist_id: 2, instrument_id: 2)
+log3 = Log.create(artist_id: 4, instrument_id: 4) 
+log4 = Log.create(artist_id: 3, instrument_id: 1)
+
